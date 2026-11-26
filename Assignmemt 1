@@ -1,1 +1,61 @@
+# Assignment No. 1
+# Different Operations on List, Tuple and Dictionary
 
+# 1. LIST OPERATIONS
+print("----- LIST OPERATIONS -----")
+
+students_list = ["Vedant", "Rahul", "Amit"]
+
+print("Original List:", students_list)
+
+students_list.append("Rohan")
+print("After Adding:", students_list)
+
+students_list.remove("Rahul")
+print("After Deleting:", students_list)
+
+students_list[0] = "Sagar"
+print("After Updating:", students_list)
+
+
+# 2. TUPLE OPERATIONS
+print("\n----- TUPLE OPERATIONS -----")
+
+students_tuple = ("Vedant", "Rahul", "Amit")
+
+print("Original Tuple:", students_tuple)
+
+students_tuple = students_tuple + ("Rohan",)
+print("After Adding:", students_tuple)
+
+students_tuple = tuple(
+    name for name in students_tuple if name != "Rahul"
+)
+print("After Deleting:", students_tuple)
+
+temp_list = list(students_tuple)
+temp_list[0] = "Sagar"
+students_tuple = tuple(temp_list)
+
+print("After Updating:", students_tuple)
+
+
+# 3. DICTIONARY OPERATIONS
+print("\n----- DICTIONARY OPERATIONS -----")
+
+students_dict = {
+    1: "Vedant",
+    2: "Rahul",
+    3: "Amit"
+}
+
+print("Original Dictionary:", students_dict)
+
+students_dict[4] = "Rohan"
+print("After Adding:", students_dict)
+
+del students_dict[2]
+print("After Deleting:", students_dict)
+
+students_dict[1] = "Sagar"
+print("After Updating:", students_dict)
