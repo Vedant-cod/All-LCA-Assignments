@@ -18,7 +18,7 @@ students_list[0] = "Sagar"
 print("After Updating:", students_list)
 
 
-# 2. TUPLE OPERATIONS
+#2. TUPLE OPERATIONS
 print("\n----- TUPLE OPERATIONS -----")
 
 students_tuple = ("Vedant", "Rahul", "Amit")
