@@ -1,1 +1,31 @@
+# Program to add two matrices using NumPy
+import numpy as np
 
+r = int(input("Enter number of rows: "))
+c = int(input("Enter number of columns: "))
+
+print("Enter elements of first matrix:")
+A = []
+for i in range(r):
+    row = []
+    for j in range(c):
+        row.append(int(input()))
+    A.append(row)
+
+print("Enter elements of second matrix:")
+B = []
+for i in range(r):
+    row = []
+    for j in range(c):
+        row.append(int(input()))
+    B.append(row)
+
+# Convert lists into NumPy arrays
+A = np.array(A)
+B = np.array(B)
+
+# Matrix Addition
+C = A + B
+
+print("Addition of two matrices:")
+print(C)
