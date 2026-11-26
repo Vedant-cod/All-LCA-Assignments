@@ -1,1 +1,10 @@
+import re
 
+# Accept string from user
+string = input("Enter a string: ")
+
+# Check whether string contains only letters and digits
+if re.fullmatch(r'[a-zA-Z0-9]+', string):
+    print("String contains only letters and numbers.")
+else:
+    print("String contains special characters.")
